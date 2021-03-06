@@ -1,12 +1,136 @@
+<!--
+    !DOCTYPE : chỉ ra cho trình duyệt biết được version markup language 
+    nào được sử dụng cho trang web 
+-->
 <!DOCTYPE html>
+<!--
+    lang attribute : specifies language of content element 
+-->
 <html lang="en">
 <head>
+    <!--
+        charset="UTF-8" : 
+        _nói với trình duyệt sẽ dùng UTF-8 là mã hóa kí tự đối với HTML document
+        => nó là method giúp cho các kí tự mình nhập vào thành mã máy có thể đọc được
+    -->
     <meta charset="UTF-8">
+    <!-- 
+        http-equiv="X-UA-Compatible" : 
+        _cho phép mở trên trình duyệt IE nhưng tùy thuộc vào phiên bản
+    -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--
+        _tương thích trên cả điện thoại lẫn máy tính
+        _width=device-width : width of page tương thích với width of device
+        _initial-scale=1.0 : thiết lập cấp độ zoom ban đầu (phone || computer) 
+        when first loading by browser
+    -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Demo</title>
 </head>
 <body>
-    <h1>Xin chao</h1>
+    <!--
+        <h1> : thẻ mở 
+        </h1> : thẻ đóng
+        Xin chao : element (phần tử)
+    -->
+    <h1>Xin chao 1</h1>
+    <!--
+        title : sẽ kết hợp với h1 
+        h1 : Dùng cho tiêu đề chính của toàn bộ trang web (2rem)
+        h2 : Dùng cho các điểm chính (1,5rem)
+        h3 : Dùng cho các điểm phụ (1,17 rem)
+    -->
+
+    <h2>Xin chao 2</h2>
+    <h3>Xin chao 3</h3>
+    <h4>Xin chao 4</h4>
+    <h5>Xin chao 5</h5>
+    <h6>Xin chao 6</h6>
+
+    <!--
+        display : block (like : <h> || <p> ,.. )
+            => các cặp thể sau này thi sẽ xuống dòng
+        display : inline 
+            => các cặp thẻ sau này thì sẽ trên cùng 1 dòng
+    -->
+
+    <p style="font-weight:bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat corporis porro, ab adipisci non, eveniet sed autem repellat consequuntur voluptas tempore quibusdam commodi, omnis quia aliquid dolores ducimus beatae enim?</p>
+    <!--
+        style hr : Thuoc ke ngang tai lieu ( default )
+        _width : ? 
+        -border-width : 1px
+        _margin-(top+bottom) : 0.5 rem
+        _display : block 
+    -->
+    <hr>
+    <p style="font-style: italic;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, maxime repellendus aliquid provident reiciendis, est enim necessitatibus ipsam quod qui repudiandae sequi. Enim praesentium nobis repellendus animi dolor magni velit.</p>
+    <p style="text-decoration: underline;">Hello world</p>
+
+    <!--
+        <ul> : unordered : ( không có số thứ tự)
+        <li> : list
+        margin-(top+botom) : 1 rem
+        display : block 
+        padding left : 40 px 
+    -->
+    <ul style="list-style-type: none;">
+        <li>Coffee</li>
+        <li>Coca</li>
+    </ul>
+
+    <ul style="list-style-type: disc;">
+        <li>Tip1</li>
+        <li>Tip2</li>
+    </ul>
+
+    <ul style="list-style-type: square;">
+        <li>ABc</li>
+        <li>XYZ</li>
+    </ul>
+
+    <ol style="list-style-type: lower-alpha;">
+        <li>Answer1</li>
+        <li>Answer2</li>
+    </ol>
+
+    <ol style="list-style-type: upper-roman;">
+        <li>1</li>
+        <li>2</li>
+    </ol>
 </body>
 </html>
+<!--
+        HTML 
+*HTML là gì ?  
+    _Không phải là ngông ngữ lập trình 
+    _HTML là ngôn ngữ siêu văn bản , sử dụng tập hợp các thẻ , cặp thể để 
+    thể hiện nội dung trên trang web 
+    _Tên file siêu văn bản : *.html || *.html
+
+*Cấu trúc cơ bản của 1 trang web  : 
+    _Tag head : chứa những phần không hiển thị 
+        {
+                +<tittle>
+                +<link>
+                +<meta>
+                +<style>
+                ...
+        }
+_Tag body : chứa những phần hiện thị ra trên browser
+        +bảng , hình ảnh , danh sách , văn bản , ... 
+
+*Property : 
+    _Thẻ có 1 hoặc nhiều thuộc tính : 
+        + class 
+        + id 
+        + title 
+        + style
+
+*Thẻ dịnh dạng chữ viết 
+    _<strong> == font-weight : bold
+    _<i> == font-style : italic ( chữ nghiêng như không in đậm)
+    _<u> == text-decoration : underline ( dấu gạch chân màu đen)
+
+*Thẻ định dạng danh sách : 
+-->
