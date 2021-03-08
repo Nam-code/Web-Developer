@@ -1,0 +1,151 @@
+<!--
+    !DOCTYPE : chỉ ra cho trình duyệt biết được version markup language 
+    nào được sử dụng cho trang web 
+-->
+<!DOCTYPE html>
+<!--
+    lang attribute : specifies language of content element 
+-->
+<html lang="en">
+<head>
+    <!--
+        charset="UTF-8" : 
+        _nói với trình duyệt sẽ dùng UTF-8 là mã hóa kí tự đối với HTML document
+        => nó là method giúp cho các kí tự mình nhập vào thành mã máy có thể đọc được
+    -->
+    <meta charset="UTF-8">
+    <!-- 
+        http-equiv="X-UA-Compatible" : 
+        _cho phép mở trên trình duyệt IE nhưng tùy thuộc vào phiên bản
+    -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--
+        _tương thích trên cả điện thoại lẫn máy tính
+        _width=device-width : width of page tương thích với width of device
+        _initial-scale=1.0 : thiết lập cấp độ zoom ban đầu (phone || computer) 
+        when first loading by browser
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, quae.</h1>
+    <p style="font-weight: bold;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia!</p>
+    <p style="font-style: italic;">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p style="text-decoration: underline;">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <ul style="list-style-type: none;">
+        <li>Coffee</li>
+        <li>Coca</li>
+    </ul>
+
+    <ul style="list-style-type: disc;">
+        <li>Tip1</li>
+        <li>Tip2</li>
+    </ul>
+
+    <ul style="list-style-type: square;">
+        <li>ABc</li>
+        <li>XYZ</li>
+    </ul>
+
+    <ol style="list-style-type: lower-alpha;">
+        <li>Answer1</li>
+        <li>Answer2</li>
+    </ol>
+
+    <ol style="list-style-type: upper-roman;">
+        <li>1</li>
+        <li>2</li>
+    </ol>
+ 
+</body>
+</html>
+<!--
+        HTML 
+*HTML là gì ?  
+    _Không phải là ngông ngữ lập trình 
+    _HTML là ngôn ngữ siêu văn bản , sử dụng tập hợp các thẻ , cặp thể để 
+    thể hiện nội dung trên trang web 
+    _Tên file siêu văn bản : *.html || *.html
+
+*Cấu trúc cơ bản của 1 trang web  : 
+    _Tag head : chứa những phần không hiển thị 
+        {
+                +<tittle>
+                +<link>
+                +<meta>
+                +<style>
+                ...
+        }
+_Tag body : chứa những phần hiện thị ra trên browser
+        +bảng , hình ảnh , danh sách , văn bản , ... 
+
+*Property : 
+    _Thẻ có 1 hoặc nhiều thuộc tính : 
+        + class 
+        + id 
+        + title 
+        + style
+
+*Thẻ dịnh dạng chữ viết 
+    _<strong> == font-weight : bold
+    _<i> == font-style : italic ( chữ nghiêng như không in đậm)
+    _<u> == text-decoration : underline ( dấu gạch chân màu đen)
+
+*Thẻ định dạng danh sách : 
+        Nguyên lí 4 thuộc tính : 
+        _border-width : thin medium thick 10px ;
+            top (thin) , right(medium) , bottom(thick) , left(10px)
+        _border-width : thin medium thick
+            top(thin) , right + left(medium) , bottom(thick)
+        _border-width: thin medium 
+            top+bottom(thin) , right + left(medium)
+        _border-width : thin 
+            all four border are thin 
+
+        border-style : solid ( 1 viền)
+        border-style : double ( 2 viền)
+        border-style : groove (2 viên khác màu )
+-->
+
+<!--
+    *Thành phần block and inline : 
+        _Block : những thẻ tự động tạo dòng mới (ở đầu và ở cuối )
+            VD : <div> , <p> , <form> , <table> , <h1> ,..
+        _Inline : những thẻ hiện thị nôi dung trên cùng 1 dòng (không tạo dòng mới , 
+        không xuống dòng)
+            Vd : <span> , <strong> , <em> , <i> , <img> , <a> ,..
+
+    *<div> : 
+        _Chỉ mang tính chất 1 block sử dụng để chứa các cặp thẻ HTML khác
+        _Vì là khối block nên tự động tạo dòng mới trước và sau thẻ 
+        _Có thể sử dụng trong css 
+
+    *<span> : 
+        _inline , a part of(document , content ) 
+        _Không chứa bất kì css nào     
+    
+    *<img> (self-closing) : 
+        _1 hình ảnh yêu cầu 4 yếu tố : 
+            +src :
+            +width:
+            +hieght : 
+            +alt :
+        _<img src="" width="" height="" alt="">
+            +width : chiều rộng ( từ trái -- phải)
+            +height : chiều cao 
+            +alt : văn bản miêu tả hình ảnh
+        
+    *vertical-align : (top - middble - bottom ,..)
+
+    *Cấu trúc XHTML khá giống với HTML nhằm tạo tính chặt chẽ cú pháp in HTML 
+    tưởng thích với nhiều thiết bị 
+        _1.Việc lồng đúng cách
+        _2.Tag thường viết lower case
+        _3.Tất cả thẻ cần phải đóng lại 
+            Note : for tag self closing 
+            VD : <br \>
+        _4.Không được phép tối giản 
+    *Attribute Align : 
+ 
+-->
