@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <p id="home">This is a top of page</p>
+        <p>H<sub>2</sub>0,2<sup>2</sup></p>
+        <h1>Copyright &copy;&laquo;</h1>
+        <p><strong>Lorem</strong> ipsum dolor, <em>sit amet consectetur adipisicing elit. Quisquam, facilis?</em></p>
+        <a href="#">Empty link</a>
+        <!-- Unordered list -->
+        <ul>
+            <li>John</li>
+            <li>Peter</li>
+            <li>sara</li>
+        </ul>
+        <!-- Nav -->
+        <ul>
+            <li><a href="about.html">About page</a></li>
+            <li><a href="#human">Point to human-image</a></li>
+        </ul>
+        <!-- Nested list -->
+        <ul>
+            <li>John</li>
+            <li>
+                Peter
+                <ol>
+                    <li>html</li>
+                    <li>css</li>
+                </ol>
+            </li>
+            <li>Sarah</li>
+        </ul>
+        <br />
+        <!-- Table  -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Number</th>
+                    <th>Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>John</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Peter</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- Form -->
+        <form action="" method="GET">
+            <!-- Input first Name -->
+            <label for="firstName">First Name :</label>
+            <input type="text" name="firstName" id="firstName" placeholder="please type your first name " />
+            <br />
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="please type your password" />
+            <br />
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" value="email@email.com" />
+            <br />
+            <!-- textarea -->
+            <textarea name="" id="" cols="8" rows="5"></textarea>
+            <input type="submit" value="submit" />
+            <br />
+            <!-- Radio button  -->
+            <p>Please select your favorite language ?</p>
+            <input type="radio" name="your-favorite-language" id="" value="Javascript" checked /> Javascript
+            <input type="radio" name="your-favorite-language" id="" value="PHP" /> PHP
+            <br />
+            <!-- Checkboxes -->
+            <p>What's your name ?</p>
+            <input type="checkbox" name="your-name" id="" value="John" checked /> John
+            <input type="checkbox" name="your-name" id="" value="Sarah" />Sarah
+            <br />
+            <!-- Select input -->
+            <p>Please , tell me what's your name ?</p>
+            <select name="your-name" id="">
+                <option value="John">John</option>
+                <option value="Sarah">Sarah</option>
+            </select>
+            <!-- Submit data -->
+            <br />
+            <button type="submit">Submit using button tag</button>
+        </form>
+        <a href="#human">Point to human</a>
+        <br />
+        <img src="images/tree.jpg" alt="tree-image" />
+        <br />
+        <img src="images/human.jpg" alt="human" height="960" width="600" />
+        <br />
+        <img id="human" src="images/forest.jpg" alt="forest" />
+        <br />
+        <!-- external -->
+        <a href="https://www.google.com/" target="_blank">Google</a>
+        <!-- internal -->
+        <br />
+        <a href="about.html">About Page</a>
+        <!-- single page -->
+        <br />
+        <a href="#home">Back to top</a>
+    </body>
+</html>
